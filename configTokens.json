@@ -1,0 +1,25 @@
+{
+    "supportAdministrators":false,
+    "supportVerification":false,
+    "integration":"bedrock-claude-llm_bot",
+    "tokens":[
+      {
+        "token": "AWS_REGION",
+        "pattern": "",
+        "type": "string",
+        "description": "Please enter the Amazon Bedrock region to use",
+        "message": "Please enter the Amazon Bedrock region to use",
+        "required": true,
+        "default": "us-east-1"
+      },
+      {
+        "token": "AWS_PROFILENAME",
+        "pattern": "",
+        "type": "string",
+        "description": "Please enter profile from your credentials file to use",
+        "message": "Cannot leave empty! Please enter a value",
+        "required": true,
+        "default": "default"
+      }
+    ]
+}
