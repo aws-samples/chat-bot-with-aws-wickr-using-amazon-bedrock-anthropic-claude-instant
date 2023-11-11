@@ -15,7 +15,7 @@
       "env": {
         "tokens": {
           "WICKRIO_BOT_NAME": {
-            "value": "bedrock-claude-llm_bot",
+            "value": "",
             "encrypted": false
           },
           "AWS_REGION": {
