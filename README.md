@@ -30,7 +30,11 @@ This sample will allow you to deploy a Generative AI chat-bot to your AWS Wickr 
 
 ## Limitations
 
-For privacy reasons, this bot is 'intentionally forgetful', in that it is not aware of your previous questions or answers. This is because we do not wish to store your AWS Wickr conversations within AWS. **NOTE** If the Amazon Bedrock administrator enables [Model invocation logging](https://docs.aws.amazon.com/bedrock/latest/userguide/model-invocation-logging.html) in the Bedrock console, then the queries will be logged and stored as-per their configuration. By default, logging is disabled.
+For privacy reasons, this bot is 'intentionally forgetful', in that it is not aware of your previous questions or answers. This is because we do not wish to store your AWS Wickr conversations within AWS. 
+
+## Model Invocation Logging
+
+**NOTE:** If the Amazon Bedrock administrator enables [Model invocation logging](https://docs.aws.amazon.com/bedrock/latest/userguide/model-invocation-logging.html) in the Bedrock console, then the queries will be logged and stored as-per their configuration. By default, logging is disabled.
 
 ## Installation
 
