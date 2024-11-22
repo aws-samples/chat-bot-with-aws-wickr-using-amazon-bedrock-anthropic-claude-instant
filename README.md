@@ -1,12 +1,12 @@
-# Chat-bot with AWS Wickr using Amazon Bedrock Anthropic Claude Instant v1
+# Chat-bot with AWS Wickr using Amazon Bedrock Anthropic Claude V2
 
-This sample will allow you to deploy a Generative AI chat-bot to your AWS Wickr network. It uses Amazon Bedrock and the Anthropic Claude Instant model for Q&A functionality. 
+This sample will allow you to deploy a Generative AI chat-bot to your AWS Wickr network. It uses Amazon Bedrock and the Anthropic Claude V2 model for Q&A functionality. 
 
 ## Prerequisites and limitations
 
 ## Prerequisites
 
-- Access to Amazon Bedrock, and the **anthropic.claude-instant-v1** model enabled 
+- Access to Amazon Bedrock, and the **anthropic.claude-v2** model enabled 
 - An existing AWS Wickr bot username and password
 - A supported host with Docker CE installed. This repo was tested on Ubuntu 22.04
 - IAM credentials configured on the host in the `~/.aws/config` and `~/.aws/credentials` file (see [here](https://docs.aws.amazon.com/cli/latest/reference/configure/) for details). The user must have the following IAM policy at a minimum (update with your Bedrock region):
@@ -21,7 +21,7 @@ This sample will allow you to deploy a Generative AI chat-bot to your AWS Wickr 
                 "bedrock:InvokeModel"
             ],
             "Resource": [
-                "arn:aws:bedrock:<region>::foundation-model/anthropic.claude-instant-v1"
+                "arn:aws:bedrock:<region>::foundation-model/anthropic.claude-v2"
             ]
         }
     ]
