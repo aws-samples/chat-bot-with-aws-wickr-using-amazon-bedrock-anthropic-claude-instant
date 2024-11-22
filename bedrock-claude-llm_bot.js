@@ -80,12 +80,12 @@ async function createResponse(message, vGroupID) {
     credentials: fromIni({profile: profileName,}),
   });
 
-  const aiModelId = 'anthropic.claude-instant-v1';
+  const aiModelId = 'anthropic.claude-v2';
   
   const invokeModelParams = {
     body: JSON.stringify({
         prompt: "\n\nHuman: " + message + "\n\nAssistant:",
-        max_tokens_to_sample: 200
+        max_tokens_to_sample: 1000
         // temperature: 0.5
     }),
     modelId: aiModelId,
